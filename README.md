@@ -20,3 +20,6 @@
 4. 참고 사이트
 
 - [10가지 질문으로 알아보는 내 이미지] https://dev-dain.github.io/10-things-test/
+- localStorage 이용하기.
+- 링크 복사하기.
+- 여러 sns에 결과 공유하기.
