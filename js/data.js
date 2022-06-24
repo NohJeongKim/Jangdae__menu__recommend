@@ -5,12 +5,16 @@ const qnaList = [
       {
         answer: "a. 신라면 정도면 식은 죽 먹기지~ 왜 못 먹어?",
         type: ["cow", "tiger", "dragon", "chick"],
-      }
+      },
       {
-        answer: "b. 나는 맵찔이라 신라면 못 먹어. 맨날 진라면 순한 맛만 먹는다고!",
+        answer:
+          "b. 나는 맵찔이라 신라면 못 먹어. 맨날 진라면 순한 맛만 먹는다고!",
         type: ["mouse", "rabbit", "horse", "snake", "dog", "monkey"],
       },
-      { answer: "c. 컨디션에 따라서 다른 것 같다. 잘 모르겠어...", type: ["sheep", "pig"] },
+      {
+        answer: "c. 컨디션에 따라서 다른 것 같다. 잘 모르겠어...",
+        type: ["sheep", "pig"],
+      },
     ],
   },
   {
@@ -51,15 +55,15 @@ const qnaList = [
     q: "4. 너는 기름진 음식 잘 먹는다, 못 먹는다?",
     a: [
       {
-        answer: 'a. 기름진 음식 잘 먹지... ',
+        answer: "a. 기름진 음식 잘 먹지... ",
         type: ["cow", "tiger", "dragon"],
       },
       {
-        answer: 'b. 나는 별로 선호하지 않아... ',
+        answer: "b. 나는 별로 선호하지 않아... ",
         type: ["sheep", "dog", "monkey", "chick", "pig"],
       },
       {
-        answer: 'c. 적당히~~ 기름진 음식이 좋지...',
+        answer: "c. 적당히~~ 기름진 음식이 좋지...",
         type: ["mouse", "rabbit", "horse", "snake"],
       },
     ],
@@ -72,7 +76,8 @@ const qnaList = [
         type: ["cow", "sheep", "dog", "dragon", "chick"],
       },
       {
-        answer: "b. 나는 냉면 별로 안 좋아해. 그냥 다른 음식 먹을래. 다른 음식도 맛있어.",
+        answer:
+          "b. 나는 냉면 별로 안 좋아해. 그냥 다른 음식 먹을래. 다른 음식도 맛있어.",
         type: ["mouse", "rabbit", "horse", "pig"],
       },
       {
@@ -102,14 +107,17 @@ const qnaList = [
   {
     q: "7. 오늘 육체적인 활동을 많이 했어?",
     a: [
-      { answer: "a. 응.. 오늘 하루 열심히 움직여서 맛있게 먹고 에너지 충전하고 싶어!", type: ["cow", "sheep", "pig"] },
+      {
+        answer:
+          "a. 응.. 오늘 하루 열심히 움직여서 맛있게 먹고 에너지 충전하고 싶어!",
+        type: ["cow", "sheep", "pig"],
+      },
       {
         answer: "b. 아니.. 오늘은 하루종일 앉아있었어.",
         type: ["tiger", "dragon", "chick"],
       },
       {
-        answer:
-          'c. "그냥 적당히... 움직인 것 같아!',
+        answer: 'c. "그냥 적당히... 움직인 것 같아!',
         type: ["mouse", "rabbit", "horse", "snake", "dog", "monkey"],
       },
     ],
@@ -125,7 +133,10 @@ const qnaList = [
         answer: "b. 나는 오늘 되게 추운 것 같아.",
         type: ["rabbit", "tiger", "horse", "snake", "dog", "monkey"],
       },
-      { answer: "c. 덥지도, 춥지도 않은 것 같아.", type: ["cow", "sheep", "pig"] },
+      {
+        answer: "c. 덥지도, 춥지도 않은 것 같아.",
+        type: ["cow", "sheep", "pig"],
+      },
     ],
   },
   {
@@ -136,8 +147,7 @@ const qnaList = [
         type: ["sheep", "mouse", "snake", "chick"],
       },
       {
-        answer:
-          "b. 아까 간식을 먹어서 적당히 배고파.",
+        answer: "b. 아까 간식을 먹어서 적당히 배고파.",
         type: ["cow", "rabbit", "horse", "pig"],
       },
       {
@@ -150,8 +160,7 @@ const qnaList = [
     q: "10. 오늘 식사하고 어떤 활동을 할 거야?",
     a: [
       {
-        answer:
-          "a. 육체적 또는 정신적으로 활동을 많이 할 것 같아.",
+        answer: "a. 육체적 또는 정신적으로 활동을 많이 할 것 같아.",
         type: ["dragon", "chick", "pig"],
       },
       {

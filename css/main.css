@@ -1,6 +1,8 @@
 #main {
-  background-color: whitesmoke;
-  width: 80%;
+  background-color: #feeae6;
   text-align: center;
-  border-radius: 20px;
+}
+
+img {
+  width: 70%;
 }

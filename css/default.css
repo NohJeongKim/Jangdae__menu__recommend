@@ -1,7 +1,12 @@
 body {
-  background-color: pink;
+  background-color: #fb6e52;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-* {
-  font-family: "Noto Sans KR", sans-serif;
+#main {
+  display: block;
+}
+
+#qna {
+  display: none;
 }
