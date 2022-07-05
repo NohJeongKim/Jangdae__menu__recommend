@@ -1,0 +1,47 @@
+/* 원하는 애니메이션 2개 만들기 + webkit 이용해서 chrome에서 이용할 수 있도록 제작하기 */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn;
+  animation-duration: 0.5s;
+}
+
+.fadeOut {
+  animation: fadeOut;
+  animation-duration: 0.5s;
+}

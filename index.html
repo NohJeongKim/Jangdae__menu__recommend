@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/qna.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/result.css" />
   </head>
   <body>
     <div class="container mx-auto">
@@ -34,18 +36,24 @@
           시작하기
         </button>
       </section>
-      <section class="mt-4 mb-4 rounded pt-3 pb-3" id="qna">
-        <div id="qnaB" class="my-2"></div>
-        <div id="answerB">
-          <button id="ans1" class="btn btn-outline-dark my-2"></button><br />
-          <button id="ans2" class="btn btn-outline-dark my-2"></button><br />
-          <button id="ans3" class="btn btn-outline-dark my-2"></button><br />
+      <section class="mt-4 mb-4 rounded pt-3 pb-3 mx-auto" id="qna">
+        <div class="status">
+          <div class="statusBar"></div>
         </div>
+        <div id="qnaB" class="my-2 rounded mx-auto"></div>
+        <div id="answerB" class="mx-auto"></div>
       </section>
-      <section id="result" class="mt-4 mb-4 rounded pt-3 pb-3"></section>
+      <section id="result" class="mt-4 mb-4 rounded pt-3 pb-3">
+        <h2 class="pb-3">당신에게 추천해주는 음식은...?</h2>
+        <div class="resultName"></div>
+        <div id="resultImage"></div>
+        <div class="resultDesc"></div>
+        <button class="startBtn btn btn-outline-warning" id="btn">
+          공유하기
+        </button>
+      </section>
     </div>
     <script src="js/data.js"></script>
     <script src="js/start.js"></script>
-    <script src="js/qna.js"></script>
   </body>
 </html>

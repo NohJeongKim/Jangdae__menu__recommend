@@ -1,4 +1,55 @@
 #qna {
-  background-color: #feeae6;
+  display: none;
+}
+
+#qnaB {
+  background-color: rgb(254, 235, 231);
+  padding: 20px;
   text-align: center;
+}
+
+#answerB {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.answerText {
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(254, 235, 231);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.answerText:hover {
+  background-color: rgb(247, 191, 90);
+  color: white;
+}
+
+.answerText:focus {
+  background-color: #e2e2e2;
+  color: black;
+}
+
+.status {
+  height: 20px;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 20px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+  background-image: linear-gradient(135deg, #fff720 10%, #3cd500 100%);
+}
+
+.toBeRed {
+  background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
 }
