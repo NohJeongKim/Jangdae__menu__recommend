@@ -5,7 +5,53 @@ const result = document.querySelector("#result");
 const countOfData = qnaList.length;
 const select = [];
 
-function calResult() {}
+function calResult() {
+  const setArray = [
+    { name: "비빔냉면", value: 0, key: 0 },
+    { name: "회냉면", value: 0, key: 1 },
+    { name: "라면", value: 0, key: 2 },
+    { name: "홍어무침", value: 0, key: 3 },
+    { name: "메밀쫄면", value: 0, key: 4 },
+    { name: "제육덮밥", value: 0, key: 5 },
+    { name: "물냉면", value: 0, key: 6 },
+    { name: "물만두", value: 0, key: 7 },
+    { name: "왕만두", value: 0, key: 8 },
+    { name: "왕만두튀김", value: 0, key: 9 },
+    { name: "메밀온면", value: 0, key: 10 },
+    { name: "한우만두국", value: 0, key: 11 },
+    { name: "이박사김밥", value: 0, key: 12 },
+    { name: "등심돈까스", value: 0, key: 13 },
+    { name: "치즈돈까스", value: 0, key: 14 },
+    { name: "생선까스", value: 0, key: 15 },
+    { name: "메밀콩국수", value: 0, key: 16 },
+  ];
+
+  for (let i = 0; i < countOfData; i++) {
+    // console.log(i);
+    const target = qnaList[i].a[select[i]];
+    for (let j = 0; j < target.type.length; j++) {
+      for (let k = 0; k < setArray.length; k++) {
+        if (target.type[j] === setArray[k].name) {
+          setArray[k].value += 1; // 몇 개 나왔는지 개수를 세어주기.
+        }
+      }
+    }
+  }
+
+  const resultArray = setArray.sort(function (a, b) {
+    // 오름차순 ?? 이해가 안 간다.
+    if (a.value > b.value) {
+      return -1;
+    }
+    if (a.value < b.value) {
+      return 1;
+    }
+    return 0;
+  });
+  console.log(resultArray);
+  let resultWord = resultArray[0].key;
+  return resultWord;
+}
 
 function goResult() {
   qna.style.webkitAnimation = "fadeOut 1s";
@@ -18,9 +64,13 @@ function goResult() {
       qna.style.display = "none";
     }, 450);
   }, 450);
+
+  // console.log(select); answer 결과를 잘 가져올 수 있다.
+  calResult();
 }
 
 function addAnswer(answerText, qIdx, idx) {
+  // i을 idx로 받아주기.
   // "answer들이 보이도록 나타내주기."
   const a = document.querySelector("#answerB");
   const answer = document.createElement("button");
@@ -48,6 +98,7 @@ function addAnswer(answerText, qIdx, idx) {
       }
       goNext(++qIdx);
     }, 450);
+    // console.log(idx);
   });
 }
 
