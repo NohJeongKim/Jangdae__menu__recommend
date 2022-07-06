@@ -1,7 +1,6 @@
 #result {
-  display: none;
   background-color: rgb(254, 235, 231);
   padding: 20px;
   text-align: center;
-  border-radius: 5px;
+  display: none;
 }

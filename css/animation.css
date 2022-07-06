@@ -36,6 +36,8 @@
   }
 }
 
+/* createElement를 이용하느라 class를 따로 만들어주었다. */
+
 .fadeIn {
   animation: fadeIn;
   animation-duration: 0.5s;
